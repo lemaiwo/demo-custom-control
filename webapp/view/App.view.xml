@@ -3,12 +3,21 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
+	xmlns:cust="be.wl.democustomcontrol.control" 
 >
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content />
+					<content>
+						<cust:Space
+							logo="images/ui5.png"
+						intro="UI5"
+						title="UI5 Custom Controls"
+						text="Everything you need to know about UI5 Custom Controls!"
+						press=".onSpacePress"/>
+
+					</content>
 				</Page>
 			</pages>
 		</App>
